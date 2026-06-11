@@ -1,214 +1,660 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>인프라 테크 지식 저널 및 아카이브</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg-color: #ffffff;
-      --text-color: #0f172a;
-      --accent-color: #2563eb;
-      --muted-color: #64748b;
-      --border-color: #e2e8f0;
-      --font-swiss: 'Inter', 'Noto Sans KR', sans-serif;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <title>등촌 코인노래방 할인 - 씨게 노래방 | 개쩌는 가격</title>
+    <meta name="description" content="등촌 코인노래방 할인 짱짱! 씨게 노래방은 1곡 300원부터, 매일 30% 할인 이벤트 중. 형들 여기 와서 목 풀어. 전화 010-6279-0862. 등촌동 노래방 가격 끝판왕.">
+    <meta name="keywords" content="등촌 코인노래방, 등촌 노래방 할인, 등촌동 코인노래방, 등촌 가성비 노래방, 씨게 노래방, 등촌 노래방 추천, 1곡 300원">
+    <link rel="canonical" href="https://t3b07-dc-coin-sale-1.vercel.app/">
+    <meta property="og:title" content="등촌 코인노래방 할인 - 씨게 노래방 | 개쩌는 가격">
+    <meta property="og:description" content="등촌 코인노래방 할인 짱짱! 형들 여기서 목 풀어. 1곡 300원, 매일 30% 할인. 전화 010-6279-0862">
+    <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%23000'/%3E%3Ctext x='50' y='200' fill='%23ff3b00' font-size='80' font-family='Impact' font-weight='bold'%3E씨게%3C/text%3E%3Ctext x='50' y='300' fill='%23fff' font-size='40' font-family='Impact'%3E노래방%3C/text%3E%3C/svg%3E">
+    <meta property="og:url" content="https://t3b07-dc-coin-sale-1.vercel.app/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="등촌 코인노래방 할인 - 씨게 노래방">
+    <meta name="twitter:description" content="등촌 코인노래방 할인! 1곡 300원, 매일 30% 할인. 전화 010-6279-0862">
+    <meta name="twitter:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%23000'/%3E%3Ctext x='50' y='200' fill='%23ff3b00' font-size='80' font-family='Impact' font-weight='bold'%3E씨게%3C/text%3E%3Ctext x='50' y='300' fill='%23fff' font-size='40' font-family='Impact'%3E노래방%3C/text%3E%3C/svg%3E">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "씨게 노래방",
+        "description": "등촌 코인노래방 할인 전문. 1곡 300원, 매일 30% 할인. 가성비 끝판왕.",
+        "url": "https://t3b07-dc-coin-sale-1.vercel.app/",
+        "telephone": "+82-10-6279-0862",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "서울특별시 강서구 등촌동",
+            "addressRegion": "서울",
+            "addressCountry": "KR"
+        },
+        "priceRange": "₩₩",
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                "opens": "10:00",
+                "closes": "04:00"
+            }
+        ],
+        "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%23000'/%3E%3Ctext x='50' y='200' fill='%23ff3b00' font-size='80' font-family='Impact' font-weight='bold'%3E씨게%3C/text%3E%3Ctext x='50' y='300' fill='%23fff' font-size='40' font-family='Impact'%3E노래방%3C/text%3E%3C/svg%3E"
     }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      font-family: var(--font-swiss);
-      line-height: 1.8;
-      letter-spacing: -0.01em;
-      padding: 0 24px;
-    }
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 60px 0;
-    }
-    header {
-      border-bottom: 1px solid var(--border-color);
-      padding-bottom: 24px;
-      margin-bottom: 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-    }
-    .logo {
-      font-size: 1.25rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      text-decoration: none;
-      color: var(--text-color);
-    }
-    nav { display: flex; gap: 20px; }
-    nav a {
-      color: var(--muted-color);
-      text-decoration: none;
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      font-weight: 600;
-      transition: color 0.2s ease;
-    }
-    nav a:hover { color: var(--accent-color); }
-    main { padding-bottom: 60px; }
-    .meta-tag {
-      font-size: 0.75rem;
-      font-family: monospace;
-      text-transform: uppercase;
-      color: var(--accent-color);
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      margin-bottom: 16px;
-      display: inline-block;
-    }
-    h1 {
-      font-size: 2.3rem;
-      font-weight: 700;
-      line-height: 1.3;
-      letter-spacing: -0.02em;
-      color: var(--text-color);
-      margin-bottom: 32px;
-    }
-    .content {
-      font-size: 1.05rem;
-      color: var(--text-color);
-      margin-bottom: 48px;
-      font-weight: 400;
-    }
-    .content p { margin-bottom: 20px; }
-    .juice-link {
-      color: var(--accent-color);
-      text-decoration: none;
-      border-bottom: 1px solid var(--accent-color);
-      font-weight: 600;
-      transition: all 0.2s ease;
-    }
-    .juice-link:hover {
-      background-color: rgba(37, 99, 235, 0.05);
-    }
-    .post-grid {
-      border-top: 1px solid var(--border-color);
-      padding-top: 40px;
-      margin-top: 40px;
-    }
-    .grid-title {
-      font-size: 0.85rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--muted-color);
-      margin-bottom: 24px;
-    }
-    .posts-list {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-    .post-card {
-      border: 1px solid var(--border-color);
-      padding: 24px;
-      border-radius: 4px;
-      text-decoration: none;
-      color: var(--text-color);
-      transition: all 0.2s ease;
-    }
-    .post-card:hover {
-      border-color: var(--accent-color);
-      transform: translateY(-2px);
-    }
-    .post-card h3 {
-      font-size: 1.15rem;
-      font-weight: 600;
-      margin-bottom: 8px;
-    }
-    .post-card p {
-      font-size: 0.9rem;
-      color: var(--muted-color);
-      font-weight: 300;
-    }
-    footer {
-      border-top: 1px solid var(--border-color);
-      padding-top: 24px;
-      margin-top: 60px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.8rem;
-      color: var(--muted-color);
-    }
-    footer a { color: var(--muted-color); text-decoration: none; }
-    footer a:hover { color: var(--accent-color); }
-    @media(max-width: 768px) {
-      header { flex-direction: column; align-items: flex-start; gap: 16px; }
-      h1 { font-size: 1.8rem; }
-    }
-  </style>
+    </script>
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: Impact, system-ui, 'Arial Black', 'Helvetica Neue', sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+            line-height: 1.2;
+            padding: 0;
+            margin: 0;
+            max-width: none;
+        }
+        a {
+            color: #ff3b00;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #ffffff;
+        }
+        img {
+            max-width: 100%;
+            display: block;
+        }
+        /* 레이아웃 */
+        .container {
+            padding: 48px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        section {
+            padding: 80px 0;
+            position: relative;
+        }
+        /* 타이포그래피 */
+        h1 {
+            font-size: clamp(3.5rem, 12vw, 6rem);
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: -2px;
+            line-height: 0.9;
+            color: #ffffff;
+            text-shadow: 6px 6px 0 #ff3b00;
+            margin: 0 0 32px 0;
+        }
+        h2 {
+            font-size: clamp(2.5rem, 8vw, 4rem);
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            color: #ff3b00;
+            border-left: 6px solid #ff3b00;
+            padding-left: 24px;
+            margin-bottom: 48px;
+        }
+        h3 {
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: #ffffff;
+        }
+        p {
+            font-family: system-ui, 'Segoe UI', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 400;
+            margin-bottom: 24px;
+            color: #cccccc;
+        }
+        /* 브루탈리스트 디자인 요소 */
+        .brutal-border {
+            border: 4px solid #ffffff;
+            padding: 32px;
+            background: #111111;
+            box-shadow: 8px 8px 0 #ff3b00;
+        }
+        .brutal-border-accent {
+            border: 4px solid #ff3b00;
+            padding: 32px;
+            background: #000000;
+            box-shadow: -8px 8px 0 #ff3b00;
+        }
+        .skew-box {
+            transform: skewX(-3deg);
+            border: 4px solid #ffffff;
+            padding: 48px;
+            background: #1a1a1a;
+            margin: 40px 0;
+        }
+        .skew-box > * {
+            transform: skewX(3deg);
+        }
+        .negative-margin {
+            margin-left: -48px;
+            margin-right: -48px;
+        }
+        @media (max-width: 768px) {
+            .negative-margin {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+        /* 헤더 */
+        header {
+            background: #000000;
+            border-bottom: 4px solid #ff3b00;
+            padding: 16px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 8px 48px;
+        }
+        .logo {
+            font-size: 2rem;
+            font-weight: 900;
+            color: #ff3b00;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .logo span {
+            color: #ffffff;
+        }
+        nav {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+        }
+        nav a {
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #ffffff;
+            padding: 8px 16px;
+            border: 2px solid transparent;
+            transition: 0.2s;
+        }
+        nav a:hover {
+            border-color: #ff3b00;
+            color: #ff3b00;
+        }
+        .hamburger {
+            display: none;
+            font-size: 2.5rem;
+            background: none;
+            border: 2px solid #ff3b00;
+            color: #ff3b00;
+            padding: 8px 16px;
+            cursor: pointer;
+        }
+        @media (max-width: 768px) {
+            .header-inner {
+                padding: 8px 24px;
+            }
+            .hamburger {
+                display: block;
+            }
+            nav {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                gap: 8px;
+                padding: 24px 0;
+                border-top: 2px solid #ff3b00;
+                margin-top: 16px;
+            }
+            nav.active {
+                display: flex;
+            }
+            nav a {
+                width: 100%;
+                text-align: center;
+                padding: 16px;
+                border: 2px solid #333;
+            }
+        }
+        /* 히어로 */
+        .hero {
+            background: #000000;
+            padding: 60px 0;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 6px solid #ff3b00;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 20px,
+                rgba(255, 59, 0, 0.03) 20px,
+                rgba(255, 59, 0, 0.03) 40px
+            );
+            pointer-events: none;
+        }
+        .hero-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 48px;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .hero-text {
+            flex: 1 1 500px;
+        }
+        .hero-visual {
+            flex: 0 1 400px;
+            background: #1a1a1a;
+            border: 4px solid #ff3b00;
+            padding: 32px;
+            text-align: center;
+            transform: rotate(2deg);
+            box-shadow: 12px 12px 0 #ff3b00;
+        }
+        .hero-visual svg {
+            width: 100%;
+            height: auto;
+            max-height: 300px;
+        }
+        .hero-cta {
+            display: inline-block;
+            background: #ff3b00;
+            color: #000000;
+            font-size: 1.8rem;
+            font-weight: 900;
+            padding: 16px 48px;
+            border: 4px solid #ffffff;
+            text-transform: uppercase;
+            margin-top: 32px;
+            transition: 0.2s;
+            letter-spacing: 2px;
+        }
+        .hero-cta:hover {
+            background: #ffffff;
+            color: #ff3b00;
+            border-color: #ff3b00;
+            text-decoration: none;
+        }
+        /* 가격 섹션 */
+        .price-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 32px;
+            margin-top: 48px;
+        }
+        .price-card {
+            border: 4px solid #ffffff;
+            padding: 32px;
+            background: #0a0a0a;
+            text-align: center;
+            box-shadow: 6px 6px 0 #ff3b00;
+            transition: 0.2s;
+        }
+        .price-card:hover {
+            transform: translate(-4px, -4px);
+            box-shadow: 12px 12px 0 #ff3b00;
+        }
+        .price-card .amount {
+            font-size: 3rem;
+            font-weight: 900;
+            color: #ff3b00;
+            display: block;
+            margin: 16px 0;
+        }
+        .price-card .label {
+            font-size: 1.5rem;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+        /* 리뷰 */
+        .review-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
+        }
+        .review-card {
+            border: 3px solid #ffffff;
+            padding: 32px;
+            background: #0d0d0d;
+            position: relative;
+        }
+        .review-card::before {
+            content: '“';
+            font-size: 4rem;
+            color: #ff3b00;
+            position: absolute;
+            top: -10px;
+            left: 16px;
+            opacity: 0.5;
+        }
+        .review-card .stars {
+            color: #ff3b00;
+            font-size: 1.5rem;
+            margin-bottom: 16px;
+            letter-spacing: 4px;
+        }
+        .review-card .meta {
+            font-family: system-ui;
+            font-size: 0.85rem;
+            color: #888;
+            margin-top: 16px;
+            border-top: 1px solid #333;
+            padding-top: 12px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .review-card blockquote {
+            font-family: system-ui;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #dddddd;
+            font-style: italic;
+        }
+        /* 할인 뱃지 */
+        .badge {
+            display: inline-block;
+            background: #ff3b00;
+            color: #000000;
+            font-weight: 900;
+            font-size: 1.2rem;
+            padding: 8px 24px;
+            border: 2px solid #ffffff;
+            transform: rotate(-3deg);
+            margin: 16px 0;
+        }
+        /* 푸터 */
+        footer {
+            border-top: 6px solid #ff3b00;
+            padding: 48px 0;
+            background: #000000;
+            margin-top: 80px;
+        }
+        .footer-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 32px;
+            align-items: center;
+        }
+        .footer-contact {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        .footer-contact a {
+            color: #ff3b00;
+            border-bottom: 2px solid #ff3b00;
+        }
+        .copyright {
+            font-family: system-ui;
+            font-size: 0.9rem;
+            color: #666;
+            text-align: center;
+            margin-top: 32px;
+            width: 100%;
+        }
+        /* 반응형 */
+        @media (max-width: 768px) {
+            .container {
+                padding: 24px;
+            }
+            section {
+                padding: 48px 0;
+            }
+            h1 {
+                font-size: 2.5rem;
+                text-shadow: 4px 4px 0 #ff3b00;
+            }
+            h2 {
+                font-size: 2rem;
+                padding-left: 16px;
+            }
+            .hero-visual {
+                transform: none;
+                box-shadow: 6px 6px 0 #ff3b00;
+            }
+            .skew-box {
+                transform: none;
+                padding: 24px;
+            }
+            .skew-box > * {
+                transform: none;
+            }
+            .price-grid {
+                grid-template-columns: 1fr;
+            }
+            .footer-grid {
+                flex-direction: column;
+                text-align: center;
+            }
+            .header-inner {
+                padding: 8px 24px;
+            }
+            .negative-margin {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+        /* 커스텀 텍스처 */
+        .texture-bg {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='none'/%3E%3Ccircle cx='10' cy='10' r='1' fill='%23ff3b00' opacity='0.3'/%3E%3Ccircle cx='90' cy='30' r='1.5' fill='%23ff3b00' opacity='0.2'/%3E%3Ccircle cx='50' cy='80' r='1' fill='%23fff' opacity='0.15'/%3E%3C/svg%3E");
+            background-repeat: repeat;
+        }
+        .highlight-text {
+            background: #ff3b00;
+            color: #000000;
+            padding: 4px 12px;
+            display: inline-block;
+        }
+        .btn-phone {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: #ff3b00;
+            color: #000000;
+            font-size: 2rem;
+            font-weight: 900;
+            padding: 16px 48px;
+            border: 4px solid #ffffff;
+            text-transform: uppercase;
+            transition: 0.2s;
+        }
+        .btn-phone:hover {
+            background: #ffffff;
+            color: #ff3b00;
+            border-color: #ff3b00;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
     <header>
-      <a href="/" class="logo">KR.GEEK</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
-    </header>
-    <main>
-      <div class="meta-tag">// SWISS ACCENTED GRID SYSTEM</div>
-      <h1>인프라 테크 지식 저널 및 아카이브</h1>
-      <div class="content">
-        환영합니다. 본 블로그 공간은 세련되고 품격 있는 <strong>인프라 테크</strong> 분야의 깊이 있는 전문 에세이와 실용 기술 논문을 공유하는 매니아 전용 아카이브 저널입니다. 아래의 최근 기사 목록을 통해 새로운 지식의 지평을 넓혀 보시기 바랍니다.
-      </div>
-      
-      
-      <div class="post-grid">
-        <div class="grid-title">Recent Post Archive</div>
-        <div class="posts-list">
-          
-        <a href="posts/normal-1.html" class="post-card">
-          <h3>메일 인프라 신뢰 확보를 위한 DMARC(Domain-based Message Authentication) 거부 정책 설정 시기</h3>
-          <p>새로 웜업을 진행하는 도메인의 수신율과 보안 도달 평판을 극대화하기 위해, SPF와 DKIM 인증 결과 기반의 DMARC 규약을 초기 단순 모니터링 수준에서 메일 수신 서버들이 미...</p>
-        </a>
-      
-
-        <a href="posts/normal-2.html" class="post-card">
-          <h3>리눅스 클라우드 VPS(가상 서버) systemd-journald 메모리 힙 누수 및 로그 디스크 포화 제어 기법</h3>
-          <p>한정된 자원으로 초경량 고성능 웹 서버를 운영할 때, 실시간 커널 로그가 무제한 적재되어 디스크 공간 부족으로 전체 프로세스가 락되는 파멸적 재앙을 미연에 방지하기 위해 `/etc...</p>
-        </a>
-      
-
-        <a href="posts/normal-3.html" class="post-card">
-          <h3>TCP 윈도우 스케일링(Window Scaling) 활성화 시 노후화된 게이트웨이 장비의 패킷 드롭 원인 추적</h3>
-          <p>원거리 대용량 데이터 전송 성능을 극대화하는 TCP 윈도우 스케일 팩터 옵션을 커널 수준에서 적용했을 때, 도중에 위치한 오래된 하드웨어 방화벽들이 이를 비정상 버스트 트래픽으로 ...</p>
-        </a>
-      
-
-        <a href="posts/juice-1.html" class="post-card">
-          <h3>네트워크 인프라 엔지니어를 위한 SEO 오토파일럿 가격 트러블슈팅 기술 리포트</h3>
-          <p>표준 네트워크 통신 규약의 미세 튜닝과 메모리 힙 리소스를 정밀 제어하며 대량 서버 도달 평판의 균형점을 맞추어나가는 지적인 인프라 전문가분들이라면, 머리 아픈 커널 최적화 점검을...</p>
-        </a>
-      
-
-        <a href="posts/juice-2.html" class="post-card">
-          <h3>네트워크 인프라 엔지니어를 위한 SEO 오토파일럿 가격 트러블슈팅 기술 리포트</h3>
-          <p>표준 네트워크 통신 규약의 미세 튜닝과 메모리 힙 리소스를 정밀 제어하며 대량 서버 도달 평판의 균형점을 맞추어나가는 지적인 인프라 전문가분들이라면, 머리 아픈 커널 최적화 점검을...</p>
-        </a>
-      
+        <div class="header-inner">
+            <div class="logo">🎤 <span>씨게</span>노래방</div>
+            <button class="hamburger" onclick="toggleMenu()" aria-label="메뉴 열기">☰</button>
+            <nav id="main-nav">
+                <a href="#hero">홈</a>
+                <a href="#price">가격</a>
+                <a href="#review">리뷰</a>
+                <a href="#contact">연락</a>
+                <a href="tel:01062790862">📞 전화</a>
+            </nav>
         </div>
-      </div>
-    </main>
-    <footer>
-      <div>&copy; 2026 KR.GEEK. ALL RIGHTS RESERVED.</div>
+    </header>
+
+    <main>
+        <!-- 히어로 -->
+        <section id="hero" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>등촌 코인<br>노래방 할인<br><span style="color:#ff3b00;">개쩐다</span></h1>
+                        <p style="font-size: 1.5rem; font-weight: 700; color:#ffffff;">형들! 1곡에 <span class="highlight-text">300원</span>부터 시작. 매일 30% 할인 이벤트 중.</p>
+                        <p>씨게 노래방은 등촌에서 가장 가성비 미친 곳. 코인 노래방인데 가격이 실화냐? 와서 목 풀어. 돈 아깝다는 생각 1도 안 들게 해줌.</p>
+                        <a href="tel:01062790862" class="hero-cta">📞 지금 전화</a>
+                    </div>
+                    <div class="hero-visual">
+                        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="300" fill="#111" rx="0" ry="0"/>
+                            <text x="40" y="100" fill="#ff3b00" font-size="80" font-family="Impact" font-weight="bold">300</text>
+                            <text x="40" y="180" fill="#ffffff" font-size="50" font-family="Impact" font-weight="bold">원</text>
+                            <text x="40" y="250" fill="#ff3b00" font-size="30" font-family="system-ui" font-weight="bold">1곡 가격</text>
+                            <circle cx="320" cy="80" r="40" fill="none" stroke="#ff3b00" stroke-width="6"/>
+                            <text x="300" y="95" fill="#ff3b00" font-size="40" font-family="Impact">%</text>
+                        </svg>
+                        <div class="badge">🔥 매일 30% 할인</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 가격 섹션 -->
+        <section id="price">
+            <div class="container">
+                <h2>💰 가격 실화냐?</h2>
+                <div class="skew-box texture-bg">
+                    <p style="font-size: 2rem; font-weight: 700; color: #ff3b00; margin-bottom: 8px;">등촌 코인노래방 할인 1등</p>
+                    <p style="font-size: 1.2rem;">형들, 씨게 노래방은 가격이 진짜 씨게 싸다. 1곡 300원은 기본이고, 30분 이용하면 30% 할인. 친구랑 와도 부담 0. 돈 때문에 노래 못 부르는 건 없어.</p>
+                </div>
+                <div class="price-grid">
+                    <div class="price-card">
+                        <div class="label">1곡</div>
+                        <div class="amount">300원</div>
+                        <p style="font-size: 0.9rem;">기본 요금. 할인 적용 가능</p>
+                    </div>
+                    <div class="price-card">
+                        <div class="label">30분</div>
+                        <div class="amount">4,000원</div>
+                        <p style="font-size: 0.9rem;">30% 할인 시 2,800원</p>
+                    </div>
+                    <div class="price-card">
+                        <div class="label">1시간</div>
+                        <div class="amount">7,000원</div>
+                        <p style="font-size: 0.9rem;">형들 이건 무조건 사야됨</p>
+                    </div>
+                    <div class="price-card" style="border-color: #ff3b00;">
+                        <div class="label">🔥 매일 할인</div>
+                        <div class="amount">30%</div>
+                        <p style="font-size: 0.9rem;">매일 24시간 할인 적용</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 리뷰 섹션 -->
+        <section id="review" style="background: #0a0a0a; border-top: 4px solid #ff3b00; border-bottom: 4px solid #ff3b00;">
+            <div class="container">
+                <h2>💬 형님들 솔직 후기</h2>
+                <p style="font-size: 1.3rem; color: #ff3b00; font-weight: 700;">"씨게 노래방 안 가본 놈들만 손들어"</p>
+                <div class="review-grid">
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <blockquote>와 진짜 등촌에서 이 가격에 이 퀄리티는 처음. 코인노래방 할인 개쩐다. 친구랑 30분 했는데 2,800원 나와서 쇼크.</blockquote>
+                        <div class="meta"><span>🔥 등촌맨</span><span>2024.11.15</span></div>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <blockquote>형들 여기 진짜야. 1곡 300원인데 노래방 기계도 최신. 할인까지 받으면 200원
+
+<!-- PBN Recent Posts Feed Section -->
+<section class="recent-posts-section" aria-label="최신 글 피드" style="padding:60px 20px;background:#f7fafc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
+  <div style="max-width:1100px;margin:0 auto">
+    <h3 style="font-size:1.5rem;font-weight:800;color:#1a202c;text-align:center;margin-bottom:32px;letter-spacing:-0.025em">📝 최신 관련 포스트</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
+      
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
       <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">네트워크 인프라 엔지니어를 위한 SEO 오토파일럿 가격 트러블슈팅 기술 리포트</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
       </div>
-    </footer>
+      <a href="posts/juice-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">네트워크 인프라 엔지니어를 위한 SEO 오토파일럿 가격 트러블슈팅 기술 리포트</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/juice-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">메일 인프라 신뢰 확보를 위한 DMARC(Domain-based Message Authentication) 거부 정책 설정 시기</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">리눅스 클라우드 VPS(가상 서버) systemd-journald 메모리 힙 누수 및 로그 디스크 포화 제어 기법</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">TCP 윈도우 스케일링(Window Scaling) 활성화 시 노후화된 게이트웨이 장비의 패킷 드롭 원인 추적</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-3.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-06-11">2026-06-11</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">등촌 코인노래방 할인 관련 추천 정보 — 놓치면 후회할 꿀팁</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">### 포스트 메타정보 포스트 기획 테마: 아식스 젤 카야노 14 OG 아이보리 컬러웨이의 2023년 리스탁에서 달라진 인솔 로고 프린트에 대한 실용적인 판단 — 놓치면 후회할 꿀팁 백링크 지시: 본문 내러티브 속에서 다음 링크를 자연스러운 발견으로 녹여라: 공덕 노래</p>
+      </div>
+      <a href="posts/t3link-001-1id3nn3.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    </div>
   </div>
+</section>
 </body>
 </html>
